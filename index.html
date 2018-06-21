@@ -2,14 +2,13 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>DreamweaverNavbar</title>
+<title>Untitled Document</title>
 <style>
-	*{
+	* {
 		margin: 0;
 		padding: 0;
 		text-decoration: none;
-		list-style: none;
-		color: black;
+		list-style: none
 	}
 	body {
 		background-image: url(background.jpg);
@@ -17,47 +16,56 @@
 		background-attachment: fixed;
 		background-size: cover;
 	}
-	ul {
+	.head{
 		text-align: center;
+		font-size: 30px;
+		font-weight: 700;
+		color: white;
+		margin-bottom: 15px;
+	}
+	.sub {
+		text-align: center;
+		color: darkgrey;
+		margin-bottom: 40px;
+	}
+	div {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		background-color: rgba(0,0,0, .6);
+		padding: 40px;
+		border-radius: 10px;
+		width: 60%;
+	}
+	ul {
+		
 	}
 	li {
-		background-color: rgba(255, 255, 255, 0);
-		display: inline-block;
-		border: none;
-		padding: /*top*/12px /*right*/20px /*bottom*/12px /*left*/20px;
-		margin-left: 20px;
-		margin-right: 20px;
-		width: 100px;
 		text-align: center;
-	}
-	li:hover {
-		transition: all .6s linear;
-		background-color: royalblue;
-		border-radius: 10px;
-		/*transition: border-radius 8s;*/
+		margin: 20px;
 	}
 	a {
 		font-size: 20px;
 		color: white;
-		font-weight:520;
+		border-radius: 10px;
+		padding: 10px;
 	}
-	nav {
-		background-color: rgba(0, 0, 0, 0.6);
-		padding-top: 6px;
-		padding-bottom: 6px;
-		position: fixed;
-		width: 100%;
+	a:hover {
+		background-color: aquamarine;
+		transition: .6s;
 	}
-</style>
+	</style>
 </head>
 <body>
-<nav>
-	<ul>
-		<li><a href="#">Home</a></li>
-		<li><a href="#">Jobs</a></li>
-		<li><a href="#">About Us</a></li>
-		<li><a href="#">Contact</a></li>
-	</ul>
-</nav>
+<div>
+<p class="head">Please pick your device</p>
+<p class="sub">This will change the appearence of the page to match your device</p>
+<ul>
+<li><a href="computer/computer.html">Computer</a></li>
+<li><a href="phone/phone.html">Phone</a></li>
+<li><a href="#">Tablet</a></li>
+</ul>
+</div>
 </body>
 </html>
