@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>DreamweaverNavbar</title>
+<style>
+	*{
+		margin: 0;
+		padding: 0;
+		text-decoration: none;
+		list-style: none;
+		color: black;
+	}
+	body {
+		background-image: url(background.jpg);
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-size: cover;
+	}
+	ul {
+		text-align: center;
+	}
+	li {
+		background-color: rgba(255, 255, 255, 0);
+		display: inline-block;
+		border: none;
+		padding: /*top*/12px /*right*/20px /*bottom*/12px /*left*/20px;
+		margin-left: 20px;
+		margin-right: 20px;
+		width: 100px;
+		text-align: center;
+	}
+	li:hover {
+		transition: all .6s linear;
+		background-color: royalblue;
+		border-radius: 10px;
+		/*transition: border-radius 8s;*/
+	}
+	a {
+		font-size: 20px;
+		color: white;
+		font-weight:520;
+	}
+	nav {
+		background-color: rgba(0, 0, 0, 0.6);
+		padding-top: 6px;
+		padding-bottom: 6px;
+		position: fixed;
+		width: 100%;
+	}
+</style>
+</head>
+<body>
+<nav>
+	<ul>
+		<li><a href="#">Home</a></li>
+		<li><a href="#">Jobs</a></li>
+		<li><a href="#">About Us</a></li>
+		<li><a href="#">Contact</a></li>
+	</ul>
+</nav>
+</body>
+</html>
